@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Found keyword: ambulance,
+GH-202402,Flooding,Standard,Found keyword: flood,
+GH-202406,Flooding,Standard,Found keyword: water,
+GH-202407,Drain Blockage,Standard,Found keyword: drain,
+GH-202410,Pothole,Standard,Found keyword: pothole,
+GH-202411,Pothole,Urgent,Found keyword: hospital,
+GH-202412,Pothole,Urgent,Found keyword: school,
+GH-202417,Waste,Standard,Found keyword: waste,
+GH-202420,Noise,Standard,Found keyword: drilling,
+GH-202422,Road Damage,Urgent,Found keyword: collapse,
+GH-202424,Flooding,Standard,Found keyword: flood,
+GH-202428,Waste,Standard,Found keyword: waste,
+GH-202432,Other,Standard,Unable to determine category from description,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Found keyword: flood,
+GH-202438,Flooding,Standard,Found keyword: water,

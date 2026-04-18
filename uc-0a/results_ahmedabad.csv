@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Found keyword: surface,
+AM-202402,Heat Hazard,Standard,Found keyword: temperature,
+AM-202405,Other,Standard,Unable to determine category from description,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Found keyword: heat,
+AM-202407,Other,Standard,Unable to determine category from description,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Found keyword: pothole,
+AM-202414,Other,Standard,Unable to determine category from description,NEEDS_REVIEW
+AM-202417,Waste,Standard,Found keyword: waste,
+AM-202421,Noise,Standard,Found keyword: music,
+AM-202424,Road Damage,Standard,Found keyword: road,
+AM-202429,Road Damage,Standard,Found keyword: surface,
+AM-202431,Road Damage,Standard,Found keyword: road,
+AM-202435,Road Damage,Standard,Found keyword: road,
+AM-202444,Waste,Standard,Found keyword: waste,
+AM-202445,Heat Hazard,Standard,Found keyword: sun,

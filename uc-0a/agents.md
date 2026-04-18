@@ -1,18 +1,16 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Agent that classifies citizen complaints by category and priority for municipal service requests.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Output a CSV with columns: category, priority, reason, flag. Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. Priority must be Urgent, Standard, or Low. Reason must cite specific words from the description. Flag must be NEEDS_REVIEW or blank.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Input file: ../data/city-test-files/test_[city].csv with description column. Output file: results_[city].csv. Use only the description field to classify. Do not use any external information or assumptions.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other"
+  - "Priority must be Urgent if description contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse; otherwise Standard or Low"
+  - "Every output row must include a reason field citing specific words from the description"
+  - "If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW"

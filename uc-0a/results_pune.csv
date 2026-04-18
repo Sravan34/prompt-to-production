@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Found keyword: pothole,
+PM-202402,Pothole,Urgent,Found keyword: child,
+PM-202406,Flooding,Standard,Found keyword: flood,
+PM-202408,Flooding,Standard,Found keyword: flood,
+PM-202410,Streetlight,Standard,Found keyword: streetlight,
+PM-202411,Streetlight,Urgent,Found keyword: hazard,
+PM-202413,Waste,Standard,Found keyword: garbage,
+PM-202418,Noise,Standard,Found keyword: music,
+PM-202419,Road Damage,Standard,Found keyword: road,
+PM-202420,Pothole,Urgent,Found keyword: injury,
+PM-202427,Flooding,Standard,Found keyword: flood,
+PM-202428,Other,Standard,Unable to determine category from description,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Found keyword: heritage,
+PM-202433,Waste,Standard,Found keyword: waste,
+PM-202446,Other,Standard,Unable to determine category from description,NEEDS_REVIEW
