@@ -7,6 +7,6 @@ skills:
 
   - name: compute_growth
     description: Takes ward + category + growth_type, returns per-period table with formula shown
-    input: filtered data (from load_dataset), ward, category, growth_type (MoM or YoY)
+    input: filtered data (from load_dataset), ward (string), category (string), growth_type (MoM or YoY string)
     output: Table with period, actual_spend, growth_pct, formula columns
-    error_handling: If growth_type not specified, refuse and ask. Flag null actual_spend without computing - output NULL with reason
+    error_handling: If growth_type not specified, refuse and ask. Flag null actual_spend without computing
